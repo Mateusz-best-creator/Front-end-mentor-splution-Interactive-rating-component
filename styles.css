@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+}
+
+.main-element, .thanks-element {
+    width: 80%;
+    background-color:hsl(213, 19%, 18%);
+    margin: 0 auto;
+    border-radius: 15px;
+    max-width: 500px;
+}
+
+.star-button {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    padding-top: 0.2rem;
+    padding-left: 0.1rem;
+    background-color: hsl(219, 8%, 33%);
+    border: none;
+}
+
+.star-element {
+    width: 100%;
+    padding: 2rem 0 2rem 2rem;
+    display: flex;
+}
+
+.content-element {
+    padding: 0 3rem 1.5rem 2rem;
+}
+
+.content-element h1{
+    color: white;
+    font-size: 2rem;
+}
+
+.content-element p {
+    color: hsl(217, 12%, 63%);
+    font-size: 1rem;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+.buttons-element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nice-button {
+    padding: 1rem;
+    width: 15%;
+    border-radius: 50%;
+    background-color: hsl(219, 8%, 33%);
+    border: none;
+    color: hsl(217, 12%, 63%);
+    transition: 0.3s;
+}
+
+.nice-button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    cursor: pointer;
+}
+
+.nice-button:focus {
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+
+.submit-button {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.huge-button {
+    background-color: hsl(25, 97%, 53%);
+    width: 80%;
+    padding: 0.8rem;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+.huge-button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+    opacity: 0.8;
+    font-weight: 700;
+}
+
+.hidden {
+    display: none;
+}
+
+.thanks-element {
+    padding: 2rem;
+}
+
+.thanks-element img {
+    display: block;
+    margin: 0 auto;
+}
+
+.thanks-element .opinion {
+    display: block;
+    width: 80%;
+    margin: 1.5rem auto 0 auto;
+    text-align: center;
+    color: hsl(25, 97%, 53%);
+    border-radius: 30px;
+    background-color: hsl(213, 22%, 26%);
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.thanks-element h1 {
+    margin: 1.5rem 0 1.5rem 0;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.thanks-element p {
+    color: hsl(217, 12%, 63%);
+}
+
+.attribution {
+    text-align: center;
+    color: #fff;
+    margin-top: 3rem;
+}
+
+.attribution a {
+    color: orange;
+}
+
+@media(min-width: 700px){
+    .main-element {
+        max-width: 500px;
+    }
+
+    .content-element {
+        padding-bottom: 3rem;
+    }
+}
